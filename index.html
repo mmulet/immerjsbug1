@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Immer Bug Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/immer/dist/immer.umd.js"></script>
+</head>
+
+<body>
+    <div>Check the console to see if the tests passed</div>
+    <div>
+        <h3>
+            On pass you should see:
+        </h3>
+        <ol>
+            <li>webpack test pass</li>
+            <li>
+                module test pass
+            </li>
+        </ol>
+    </div>
+    <div>
+        <h3>
+            On failure you should see:
+        </h3>
+        <ol>
+            <li>
+                webpack test pass
+            </li>
+            <li>
+                set.ts:158 Uncaught TypeError: t.scope.immer.markChanged is not a function
+            </li>
+        </ol>
+    </div>
+
+    <script src="./dist/testWebpack.bundle.js"></script>
+    <script src="./src/testGlobal.js"></script>
+</body>
+
+</html>
