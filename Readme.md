@@ -12,10 +12,12 @@ This repo will host a test page that will call the above function in webpack
 and as a global. 
 
 ## Installing/Building
-* ```sh
+1. 
+```sh
 npm install .
 ```
-* ```sh
+2.
+```sh
 npm run build
 ```
 
